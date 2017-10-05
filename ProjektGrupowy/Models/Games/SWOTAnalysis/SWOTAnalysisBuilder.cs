@@ -64,22 +64,22 @@ namespace ProjektGrupowy.Models.Games.SWOTAnalysis
 
         private void BuildBoard()
         {
-            RegionContainer[] originalityContainers = new RegionContainer[3];
+            RegionContainer[] originalityContainers = new RegionContainer[4];
 
-            var coordinates = new List<System.Drawing.Point> { new System.Drawing.Point(5, 50), new System.Drawing.Point(50, 5), new System.Drawing.Point(50, 50) };
+            var coordinates = new List<System.Drawing.Point> { new System.Drawing.Point(5,10), new System.Drawing.Point(5, 60), new System.Drawing.Point(55, 10), new System.Drawing.Point(55, 60) };
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
-                originalityContainers[i] = new RegionContainer(coordinates[i].X, coordinates[i].Y, 45, 45, RegionContainer.OrientationType.VERTICAL);
-                originalityContainers[i].SetAcceptElement(strength);
-                originalityContainers[i].SetAcceptElement(weakness);
-                originalityContainers[i].SetAcceptElement(opportunity);
-                originalityContainers[i].SetAcceptElement(threat);
+                originalityContainers[i] = new RegionContainer(coordinates[i].X, coordinates[i].Y, 40, 35, RegionContainer.OrientationType.VERTICAL);
                 BoardRegion region = new BoardRegion(new Color(0, 0, 0), 0.0f, "Nazwa");
                 region.PopupAttribute = "Nazwa";
                 originalityContainers[i].AddRegion(region);
                 SWOT.Board.AddContainer(originalityContainers[i]);
             }
+            originalityContainers[0].SetAcceptElement(strength);
+            originalityContainers[2].SetAcceptElement(weakness);
+            originalityContainers[1].SetAcceptElement(opportunity);
+            originalityContainers[3].SetAcceptElement(threat);
         }
 
         public void Build()
