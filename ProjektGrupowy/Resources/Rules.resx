@@ -166,13 +166,13 @@
     <value />
   </data>
   <data name="SWOTAnalysis_Applications" xml:space="preserve">
-    <value>Porządkowanie i analiza informacji</value>
+    <value>Organizing and analyzing information, strategy building, decision-making, viability study</value>
   </data>
   <data name="SWOTAnalysis_Description" xml:space="preserve">
-    <value>SWOT – popularna heurystyczna technika służąca do porządkowania i analizy informacji.</value>
+    <value>SWOT Analysis  is an acronym for strengths, weaknesses, opportunities, and threats and is a structured planning method that evaluates those four elements of an organization, project or business venture.</value>
   </data>
   <data name="SWOTAnalysis_Elements" xml:space="preserve">
-    <value>Reprezentuje silną stronę projektu.&amp;Reprezentuje słabą stronę projektu.&amp;Reprezentuje szansę.&amp;Reprezentuje zagrożenie.</value>
+    <value>Represents project's strengths.&amp;Represents project's weaknesses.&amp;Represents project's chances.&amp;Represents project's threats.</value>
   </data>
   <data name="SWOTAnalysis_Tokens" xml:space="preserve">
     <value />
